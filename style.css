@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006be6;
+  padding: 15px 50px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.header menu-select {
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.banner {
+  height: 400px;
+  background: url("https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.catálogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px 50px;
+}
+
+.Catálogo-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(1, 17, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Catálogo-card:hover {
+  transform: scale(1.1);
+}
+
+.Catálogo-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Catálogo-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.Catálogo-card p {
+  color: #1504a7;
+  margin-bottom: 15px;
+}
+
+.Catálogo-card button:hover {
+  background-color: #1900ff;
+}
+
+.Catálogo-card button {
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: #001c99;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #1900ff;
+}
